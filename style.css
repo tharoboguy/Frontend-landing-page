@@ -1,0 +1,207 @@
+section {
+    padding-left: 190px;
+}
+
+.nav-bar {
+    width: 1200px;
+    height: 70px;
+    position: fixed;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+span {
+    padding-left: 13px;
+}
+
+.nav {
+    margin-left: 400px;
+}
+
+button {
+    margin-left: 20px;
+    width: 90px;
+    height: 40px;
+}
+
+.hero {
+    width: 1200px;
+    height: 500px;
+}
+
+.hero-group {
+    padding-top: 120px;
+    width: 420px;
+    height: 300px;
+    float: left;
+}
+
+.hero-img {
+    float: right;
+    padding-top: 80px;
+    padding-right: 100px;
+    width: 500px;
+    height: 400px;
+}
+
+.hero-heading {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.products {
+    width: 1200px;
+    height: auto;
+    margin-top: 90px;
+}
+
+.products-heading {
+    font-size: 38px;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-weight: bold;
+}
+
+.products-group {
+    display: flex;
+    width: 1200px;
+}
+
+.products-items {
+    width: 300px;
+    height: auto;
+}
+
+.products-signup {
+    width: 100px;
+    height: 50px;
+}
+
+.customers {
+    width: 1200px;
+    height: auto;
+    margin-top: 140px;
+}
+
+.professionals {
+    width: 1200px;
+    height: 700px;
+    padding-left: 0;
+}
+
+.manager {
+    width: 1200px;
+    height: 700px;
+    padding-left: 0;
+}
+
+.marketer {
+    width: 1200px;
+    height: 700px;
+    padding-left: 0;
+}
+
+.customers-group-1 {
+    width: 450px;
+    height: 700px;
+    float: left;
+}
+
+.customers-heading {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.customers-subhead {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.customers-subtext {
+    font-size: 14px;
+}
+
+.professional-img {
+    float: right;
+    padding-top: 80px;
+    width: 500px;
+    height: 700px;
+}
+
+.customers-group-2 {
+    width: 350px;
+    height: 700px;
+    float: right;
+    padding-right: 100px;
+}
+
+.manager-img {
+    width: 530px;
+    height: 530px;
+    float: left;
+}
+
+.customers-group-3 {
+    width: 300px;
+    height: 700px;
+    float: left;
+}
+
+.marketer-img {
+    float: right;
+    width: 750px;
+    height: 700px;
+}
+
+.pricing {
+    margin-top: 90px;
+    width: 1200px;
+    height: 300px;
+    text-align: center;
+}
+
+.recources {
+    width: 1200px;
+    height: auto;
+}
+
+.resources-items {
+    display: flex;
+}
+
+.item {
+    width: 380px;
+    height: 500px;
+
+}
+
+.footer {
+    width: 1200px;
+    height: 280px;
+}
+
+.footer-items {
+    display: flex;
+}
+
+.foot-item {
+    width: 400px;
+    height: 200px;
+    margin-top: 35px;
+}
+
+.footer-logo {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    line-height: 1.7;
+}
+
+.owner {
+    float: right;
+}
