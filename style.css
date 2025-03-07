@@ -150,10 +150,10 @@ button {
 }
 
 #products {
-    background-image: url('images/shape.png');
+    /* background-image: url('images/shape.png');
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: cover;
+    background-size: cover; */
     width: 1200px;
     height: auto;
     margin-top: 205px;
@@ -316,8 +316,8 @@ button {
 }
 
 #pricing {
-    background-image: url('images/oval.png');
-    background-size: cover;
+    /* background-image: url('images/oval.png');
+    background-size: cover; */
     margin-top: 80px;
     width: 100vw;
     height: 300px;
@@ -676,7 +676,7 @@ ul {
 
 @media screen and (max-width: 767px) {
     .nav-bar {
-        width: 100vw;
+        width: 575px;
     }
 
     .nav {
@@ -706,7 +706,7 @@ ul {
     }
 
     .hero-group {
-        width: 100vw;
+        width: 575px;
         height: auto;
         float: none;
         text-align: center;
@@ -715,26 +715,26 @@ ul {
 
     .hero-img {
         float: none;
-        width: 100vw;
+        width: 575px;
         height: auto;
         padding-top: 50px;
         padding-left: 0;
     }
 
     .products-heading {
-        width: 100vw;
+        width: 575px;
         padding-left: 0;
         padding-right: 0;
         padding-top: 200px;
     }
 
     .products-group {
-        width: 100vw;
+        width: 575px;
         flex-direction: column;
     }
 
     .products-items {
-        width: 100vw;
+        width: 575px;
     }
 
     .products-signup {
@@ -743,15 +743,15 @@ ul {
     }
 
     .professionals {
-        width: 100vw;
+        width: 575px;
     }
 
     .manager {
-        width: 100vw;
+        width: 575px;
     }
 
     .marketer {
-        width: 100vw;
+        width: 575px;
     }
 
     .customers-group-1, .customers-group-2, .customers-group-3, .professional-img, .manager-img, .marketer-img {
@@ -759,7 +759,7 @@ ul {
     }
 
     .customers-group-1, .customers-group-2, .customers-group-3 {
-        width: 100vw;
+        width: 575px;
         height: auto;
     }
 
@@ -792,27 +792,27 @@ ul {
     }
 
     #pricing {
-        width: 100vw;
+        width: 575px;
         margin-top: 400px;
     }
 
     .resources-items {
-        width: 100vw;
+        width: 575px;
         flex-direction: column;
     }
 
     .resources-img {
-        width: 100vw;
+        width: 575px;
         height: auto;
     }
 
     .item {
-        width: 100vw;
+        width: 575px;
         height: auto;
     }
 
     hr {
-        width: 100vw;
+        width: 575px;
         opacity: 30%;
     }
 
@@ -847,13 +847,13 @@ ul {
     }
 
     .copyright {
-        width: 100vw;
+        width: 575px;
         display: block;
         text-align: center;
     }
 
     .owner {
-        width: 100vw;
+        width: 575px;
         display: block;
         text-align: center;
         float: none;
