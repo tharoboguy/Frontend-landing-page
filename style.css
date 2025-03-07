@@ -36,6 +36,9 @@ a:hover {
     padding-top: 7px;
 }
 
+.logo-link {
+    opacity: 1;
+}
 
 span {
     padding-left: 8px;
