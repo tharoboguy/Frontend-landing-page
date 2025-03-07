@@ -711,6 +711,10 @@ ul {
         width: 100vw;
     }
 
+    .hamburger {
+        display: block;
+    }
+
     .logo {
         width: 200px;
         height: 70px;
