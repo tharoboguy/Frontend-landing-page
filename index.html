@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
@@ -10,13 +10,17 @@
     <section class="nav-bar">
         <img class="logo" src="images/logo.svg">
         <span class="nav">
-            <span>Products</span>
-        <span>Customers</span>
-        <span>Pricing</span>
-        <span>Recources</span>
+        <span><a href="#products">Products</a></span>
+        <span><a href="#customers">Customers</a></span>
+        <span><a href="#pricing"> Pricing</a></span>
+        <span><a href="#resources">Recources</a></span>
         </span>
         <button class="signin">Sign In</button>
-        <button class="signin">Sign Up</button>
+        <button class="signup">Sign Up</button>
+
+        <div class="hamburger">
+            ☰
+        </div>
     </section>
 
     <section class="hero">
@@ -26,12 +30,12 @@
             in one place! The most intuitive way to imagine
             your next user experience.</p>
         <button class="hero-button">Get Started</button>
-        <button class="hero-video"><a href="#">Watch video</a></button>
+        <button class="hero-video"><a class="hero-video-link" href="#">Watch the video</a></button>
         </div>
         <img class="hero-img" src="images/hero-img1.png">
     </section>
 
-    <section class="products">
+    <section id="products">
         <h1 class="products-heading">We design tools to unveil your superpowers</h1>
         <div class="products-group">
             <div class="products-items">
@@ -55,26 +59,26 @@
                 <p class="products-subtext">Personal choices and the overall personality of the person.</p>
             </div>
         </div>
-        <button class="products-signup">Sign Up Now</button>
+        <button class="products-signup">SIGN UP NOW</button>
     </section>
 
-    <section class="customers">
+    <section id="customers">
         <section class="professionals">
             <div class="customers-group-1">
-                <h2 class="customers-subhead">Effortless Validation for</h2>
+                <h2 class="customers-subhead main">Effortless Validation for</h2>
                 <h1 class="customers-heading">Design Professionals</h1>
-                <p class="customers-text">The Myspace page defines the individual,his or her characteristics, traits, personal choices <br/>and the overall <br/>personality of the person</p>
+                <p class="customers-text">The Myspace page defines the individual,his or her characteristics, traits, personal choices and the <br/> overall <br/>personality of the person</p>
     
                 <h2 class="customers-subhead">Accessory makers</h2>
-                <p class="customers-text">While most people enjoy casino gambling, sports betting,
+                <p class="customers-text">While most people enjoy casino gambling, sports betting,<br/>
                     lottery and bingo playing for the fun</p>
     
                 <h2 class="customers-subhead">Alterationists</h2>
-                <p class="customers-text">If you are looking for a new way to promote your business
+                <p class="customers-text">If you are looking for a new way to promote your business<br/>
                     that won't cost you money,</p>
     
                 <h2 class="customers-subhead">Custom Design designers</h2>
-                <p class="customers-text">If you are looking for a new way to promote your business
+                <p class="customers-text">If you are looking for a new way to promote your business<br/>
                     that won't cost you more money,</p>
             </div>
             <div class="professional-img"><img src="images/validation.png"></div>
@@ -82,20 +86,20 @@
         <section class="manager">
             <div><img class="manager-img" src="images/manager.png"></div>
             <div class="customers-group-2">
-                <h2 class="customers-subhead">Easier decision making for</h2>
+                <h2 class="customers-subhead main">Easier decision making for</h2>
                 <h1 class="customers-heading">Product Managers</h1>
                 <p class="customers-text">The Myspace page defines the individual,his or her characteristics, traits, personal choices and the overall
                     personality of the person</p>
-    
-                <img class="customers-tick" src="images/tick.png"><span class="customers-li">Never worry about overpaying for your energy again.</span>
-                <img class="customers-tick" src="images/tick.png"><span class="customers-li">We will only switch you to energy companies that we trust and will treat you righ</span>
-                <img class="customers-tick" src="images/tick.png"><span class="customers-li">We track the markets daily and know where thesavings are</span>
+                
+                <p class="customers-li"><img class="customers-tick" src="images/tick.png">Never worry about overpaying for your<br/> energy again.</p>
+                <p class="customers-li"><img class="customers-tick" src="images/tick.png">We will only switch you to energy companies<br/> that we trust and will treat you right</p>
+                <p class="customers-li"><img class="customers-tick" src="images/tick.png">We track the markets daily and know where the<br/>savings are.</p>
             </div>
         </section>
 
         <section class="marketer">
             <div class="customers-group-3">
-                <h2 class="customers-subhead">Optimisation for</h2>
+                <h2 class="customers-subhead main">Optimisation for</h2>
                 <h1 class="customers-heading">Marketers</h1>
                 <p class="customers-text">Few would argue that, despite the advancements of
                     feminism over the past three decades, women still face a
@@ -117,34 +121,34 @@
         </section>
     </section>
     
-    <section class="pricing">
+    <section id="pricing">
         <div class="pricing">
             <h1 class="pricing-head">Need a super hero?</h1>
-            <p class="pricing-text">Do you require some help for your project: Conception workshop,
+            <p class="pricing-text">Do you require some help for your project: Conception workshop,<br/>
             prototyping, marketing strategy, landing page, Ux/UI?</p>
             <button class="pricing-btn">Contact our expert</button>
         </div>
     </section>
 
-    <section class="resources">
+    <section id="resources">
         <h1 class="resources-head">Marketing Strategies</h1>
         <p class="resources-text">Join 40,000+ other marketers and get proven strategies on email marketing</p>
         <div class="resources-items">
             <div class="item">
                 <img class="resources-img" src="images/marketing01.png">
-                <p>By <b>Abdullah</b> | 03 March 2019</p>
+                <p class="img-text">By <b>Abdullah</b> | 03 March 2019</p>
                 <h2 class="img-head">Increasing Prosperity With Positive Thinking</h2>
             </div>
 
             <div class="item">
                 <img class="resources-img" src="images/marketing02.png">
-                <p>By <b>Abdullah</b> | 03 March 2019</p>
+                <p class="img-text">By <b>Abdullah</b> | 03 March 2019</p>
                 <h2 class="img-head">Motivation Is The First Step To Success</h2>
             </div>
 
             <div class="item">
                 <img class="resources-img" src="images/marketing03.png">
-                <p>By <b>Abdullah</b> | 03 March 2019</p>
+                <p class="img-text">By <b>Abdullah</b> | 03 March 2019</p>
                 <h2 class="img-head">Success Steps For Your Personal Or Business Life</h2>
             </div>
         </div>

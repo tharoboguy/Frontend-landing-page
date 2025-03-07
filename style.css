@@ -1,88 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 section {
-    padding-left: 190px;
+    padding-left: 185px;
+    font-family: "Poppins", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .nav-bar {
-    width: 1200px;
-    height: 70px;
+    width: 100vw;
+    height: 60px;
     position: fixed;
+    background-color: hsl(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    opacity: 80%;
+}
+
+a:hover {
+    color: hsl(38, 100%, 50%);
 }
 
 .logo {
-    padding-left: 10px;
+    margin-left: 5px;
+    padding-top: 7px;
 }
 
 span {
-    padding-left: 13px;
+    padding-left: 8px;
+    font-size: 10px;
 }
 
 .nav {
-    margin-left: 400px;
+    margin-left: 530px;
+    padding-top: -10px;
 }
 
 button {
     margin-left: 20px;
-    width: 90px;
+    width: 85px;
+    height: 36px;
+    font-size: 13px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 35px;
     height: 40px;
+    margin-top: 10px;
+    float: right;
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+    color: black;
+    border: 1px solid black;
+}
+
+.signin {
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: transparent;
+    font-weight: normal;
+    transition: box-shadow;
+}
+
+.signin:focus {
+    box-shadow: 0 0 5px 2px hsl(38, 100%, 50%);
+}
+
+.signup {
+    background-color: hsl(38, 100%, 50%);
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    margin-left: 10px;
+}
+
+.signup:hover {
+    background-color: hsl(38, 85%, 50%);
 }
 
 .hero {
-    width: 1200px;
+    width: 1300px;
     height: 500px;
 }
 
 .hero-group {
-    padding-top: 120px;
-    width: 420px;
+    padding-top: 210px;
+    width: 335px;
     height: 300px;
     float: left;
+    font-family: "Poppins", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .hero-img {
     float: right;
-    padding-top: 80px;
-    padding-right: 100px;
-    width: 500px;
-    height: 400px;
+    padding-top: 90px;
+    padding-left: 180px;
+    width: 720px;
+    height: 520px;
 }
 
 .hero-heading {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: bold;
 }
 
-.products {
+.hero-text {
+    padding-top: 28px;
+    font-size: 15px;
+    line-height: 1.8;
+    opacity: 70%;
+}
+
+.hero-button {
+    width: 125px;
+    height: 45px;
+    margin-top: 40px;
+    background-color: hsl(38, 100%, 50%);
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-weight: normal;
+    margin-left: 0;
+}
+
+.hero-button:hover {
+    background-color: hsl(38, 80%, 50%);
+}
+
+.hero-video {
+    width: 125px;
+    height: 45px;
+    margin-top: 40px;
+    background-color: white;
+    border: 0;
+    font-weight: normal;
+}
+
+.hero-video-link {
+    color: hsl(38, 100%, 50%);
+}
+
+#products {
+    background-image: url('images/shape.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
     width: 1200px;
     height: auto;
-    margin-top: 90px;
+    margin-top: 205px;
+    font-family: "Poppins", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .products-heading {
-    font-size: 38px;
-    padding-left: 300px;
-    padding-right: 300px;
+    font-size: 34px;
+    padding-left: 370px;
+    padding-right: 230px;
+    text-align: center;
     font-weight: bold;
 }
 
 .products-group {
     display: flex;
+    gap: 10px;
     width: 1200px;
 }
 
 .products-items {
-    width: 300px;
+    width: 275px;
     height: auto;
+}
+
+.products-icon {
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+}
+
+.products-subhead {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.products-subtext {
+    padding-left: 10px;
+    margin-top: 20px;
+    font-size: 12px;
 }
 
 .products-signup {
-    width: 100px;
-    height: 50px;
+    width: 123px;
+    height: 38px;
+    margin-top: 10px;
+    margin-left: 49%;
+    background-color: hsl(38, 100%, 50%);
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-size: 12px;
 }
 
-.customers {
+.products-signup:hover {
+    background-color: hsl(38, 80%, 50%);
+}
+
+#customers {
     width: 1200px;
     height: auto;
-    margin-top: 140px;
+    margin-top: 120px;
+    font-family: "Poppins", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .professionals {
@@ -104,41 +238,64 @@ button {
 }
 
 .customers-group-1 {
-    width: 450px;
+    width: 550px;
     height: 700px;
     float: left;
 }
 
 .customers-heading {
-    font-size: 38px;
+    font-size: 29px;
     font-weight: bold;
+    margin-top: 17px;
 }
 
 .customers-subhead {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
+    padding-top: 20px;
 }
 
-.customers-subtext {
-    font-size: 14px;
+.customers-text {
+    font-size: 12px;
+    line-height: 1.4;
+    padding-top: 15px;
+    opacity: 70%;
+}
+
+.customers-subhead.main {
+    opacity: 70%;
 }
 
 .professional-img {
     float: right;
-    padding-top: 80px;
+    padding-top: 20px;
+    margin-right: 90px;
     width: 500px;
-    height: 700px;
+    height: 600px;
 }
 
 .customers-group-2 {
-    width: 350px;
-    height: 700px;
-    float: right;
+    width: 620px;
+    height: 600px;
+    float: left;
     padding-right: 100px;
+    margin-left: 40px;
+}
+
+.customers-li {
+    font-size: 12px;
+    padding-top: 20px;
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+.customers-tick {
+    position: absolute;
+    margin-left: -60px;
 }
 
 .manager-img {
-    width: 530px;
+    width: 540px;
     height: 530px;
     float: left;
 }
@@ -147,43 +304,107 @@ button {
     width: 300px;
     height: 700px;
     float: left;
+    margin-top: -70px;
 }
 
 .marketer-img {
     float: right;
     width: 750px;
     height: 700px;
+    padding-left: 150px;
+    margin-top: -70px;
 }
 
-.pricing {
-    margin-top: 90px;
-    width: 1200px;
+#pricing {
+    background-image: url('images/oval.png');
+    background-size: cover;
+    margin-top: 80px;
+    width: 100vw;
     height: 300px;
     text-align: center;
+    font-family: "Poppins", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.recources {
+.pricing-head {
+    font-size: 27px;
+}
+
+.pricing-text {
+    color: hsl(219, 45%, 35%);
+    padding-top: 20px;
+}
+
+.pricing-btn {
+    width: 140px;
+    height: 38px;
+    margin-top: 30px;
+    background-color: hsl(38, 100%, 50%);
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-size: 12px;
+}
+
+.pricing-btn:hover {
+    background-color: hsl(38, 80%, 50%);
+}
+
+#resources {
     width: 1200px;
     height: auto;
 }
 
+.resources-head {
+    font-size: 24px;
+}
+
+.resources-text {
+    padding-top: 15px;
+    opacity: 70%;
+}
+
+b:hover {
+    color: hsl(38, 100%, 50%);
+    cursor: pointer;
+}
+
+
+.img-text {
+    padding-top: 10px;
+}
+
+.img-head {
+    padding-top: 20px;
+    font-size: 16.5px;
+}
+
 .resources-items {
+    padding-top: 40px;
     display: flex;
+    gap: 55px;
+}
+
+.resources-img {
+    width: 370px;
 }
 
 .item {
-    width: 380px;
+    width: 330px;
     height: 500px;
 
 }
 
 .footer {
     width: 1200px;
-    height: 280px;
+    height: auto;
 }
 
 .footer-items {
     display: flex;
+}
+
+hr {
+    opacity: 50%;
 }
 
 .foot-item {
@@ -196,12 +417,448 @@ button {
     margin-top: 20px;
 }
 
+.links-head {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+li {
+    opacity: 70%;
+}
+
 ul {
     list-style: none;
     padding: 0px;
     line-height: 1.7;
+    padding-top: 20px;
+}
+
+.newsletter-text {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.newsletter-signup {
+    width: 140px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 0px;
+    background-color: hsl(38, 100%, 50%);
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-size: 12px;
+}
+
+.newsletter-signup:hover {
+    background-color: hsl(38, 80%, 50%);
+}
+
+.input {
+    width: 270px;
+    height: 35px;
+    margin-top: 25px;
+    font-size: 13px;
+    padding-left: 20px;
+    transition: box-shadow;
+    opacity: 70%;
+}
+
+.input:focus {
+    border: none;
+    box-shadow: 0 0 10px 2px hsl(38, 100%, 50%);
+}
+
+.copyright {
+    padding-top: 10px;
+    font-size: 13px;
 }
 
 .owner {
     float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 574px) {
+    .nav-bar {
+        width: 100vw;
+    }
+
+    .nav {
+        display: none;
+    }  
+    
+    .signin, .signup {
+        display: none;
+    }
+
+    section {
+        padding-left: 20px;
+        margin-right: 20px;
+        width: 100vw;
+    }
+
+    .hero, #products, #customers, #pricing, #resources, .footer {
+        width: 100vw;
+    }
+
+    .logo {
+        width: 200px;
+        height: 70px;
+        padding-left: 3px;
+        margin-top: 3px;
+        position: fixed;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-group {
+        width: 100vw;
+        height: auto;
+        float: none;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .hero-img {
+        float: none;
+        width: 100vw;
+        height: auto;
+        padding-top: 50px;
+        padding-left: 0;
+    }
+
+    .products-heading {
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 200px;
+    }
+
+    .products-group {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .products-items {
+        width: 100vw;
+    }
+
+    .products-signup {
+        margin-top: 7px;
+        margin-left: 35vw;
+    }
+
+    .professionals {
+        width: 100vw;
+    }
+
+    .manager {
+        width: 100vw;
+    }
+
+    .marketer {
+        width: 100vw;
+    }
+
+    .customers-group-1, .customers-group-2, .customers-group-3, .professional-img, .manager-img, .marketer-img {
+        float: none;
+    }
+
+    .customers-group-1, .customers-group-2, .customers-group-3 {
+        width: 100vw;
+        height: auto;
+    }
+
+    .customers-group-2 {
+        padding-right: 0;
+        margin-left: 10px;
+    }
+
+    .customers-group-3 {
+        margin-top: 600px;
+    }
+
+    .professional-img {
+        padding-top: 30px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .manager-img {
+        margin-top: 480px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .marketer-img {
+        margin-top: 30px;
+        padding-left: 0;
+        width: 80vw;
+        height: auto;
+    }
+
+    #pricing {
+        width: 100vw;
+        margin-top: 400px;
+    }
+
+    .resources-items {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .resources-img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .item {
+        width: 100vw;
+        height: auto;
+    }
+
+    hr {
+        width: 100vw;
+        opacity: 30%;
+    }
+
+    hr:nth-child(1) {
+        margin-top: 100px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-items {
+        flex-direction: column;
+    }
+
+    .foot-item {
+        width: 50vw;
+        height: auto;
+    }
+
+    .foot-item:nth-child(4) {
+        order: 1;
+    } 
+
+    .foot-item:nth-child(2) {
+        order: 2;
+    }
+
+    .foot-item:nth-child(3) {
+        order: 3;
+        margin-bottom: 50px;
+    }
+
+    .copyright {
+        width: 100vw;
+        display: block;
+        text-align: center;
+    }
+
+    .owner {
+        width: 100vw;
+        display: block;
+        text-align: center;
+        float: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .nav-bar {
+        width: 100vw;
+    }
+
+    .nav {
+        display: none;
+    }  
+    
+    .signin, .signup {
+        display: none;
+    }
+
+    section {
+        padding-left: 20px;
+        margin-right: 20px;
+        width: 100vw;
+    }
+
+    .hero, #products, #customers, #pricing, #resources, .footer {
+        width: 100vw;
+    }
+
+    .logo {
+        width: 200px;
+        height: 70px;
+        padding-left: 3px;
+        margin-top: 3px;
+        position: fixed;
+    }
+
+    .hero-group {
+        width: 100vw;
+        height: auto;
+        float: none;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .hero-img {
+        float: none;
+        width: 100vw;
+        height: auto;
+        padding-top: 50px;
+        padding-left: 0;
+    }
+
+    .products-heading {
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 200px;
+    }
+
+    .products-group {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .products-items {
+        width: 100vw;
+    }
+
+    .products-signup {
+        margin-top: 7px;
+        margin-left: 35vw;
+    }
+
+    .professionals {
+        width: 100vw;
+    }
+
+    .manager {
+        width: 100vw;
+    }
+
+    .marketer {
+        width: 100vw;
+    }
+
+    .customers-group-1, .customers-group-2, .customers-group-3, .professional-img, .manager-img, .marketer-img {
+        float: none;
+    }
+
+    .customers-group-1, .customers-group-2, .customers-group-3 {
+        width: 100vw;
+        height: auto;
+    }
+
+    .customers-group-2 {
+        padding-right: 0;
+        margin-left: 10px;
+    }
+
+    .customers-group-3 {
+        margin-top: 600px;
+    }
+
+    .professional-img {
+        padding-top: 30px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .manager-img {
+        margin-top: 480px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .marketer-img {
+        margin-top: 30px;
+        padding-left: 0;
+        width: 80vw;
+        height: auto;
+    }
+
+    #pricing {
+        width: 100vw;
+        margin-top: 400px;
+    }
+
+    .resources-items {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .resources-img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .item {
+        width: 100vw;
+        height: auto;
+    }
+
+    hr {
+        width: 100vw;
+        opacity: 30%;
+    }
+
+    hr:nth-child(1) {
+        margin-top: 100px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-items {
+        flex-direction: column;
+    }
+
+    .foot-item {
+        width: 50vw;
+        height: auto;
+    }
+
+    .foot-item:nth-child(4) {
+        order: 1;
+    } 
+
+    .foot-item:nth-child(2) {
+        order: 2;
+    }
+
+    .foot-item:nth-child(3) {
+        order: 3;
+        margin-bottom: 50px;
+    }
+
+    .copyright {
+        width: 100vw;
+        display: block;
+        text-align: center;
+    }
+
+    .owner {
+        width: 100vw;
+        display: block;
+        text-align: center;
+        float: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
 }
