@@ -514,7 +514,7 @@ ul {
         width: 100vw;
     }
 
-    .hero, #products, #customers, #pricing, #resources, .footer {
+    #hero, #products, #customers, #pricing, #resources, .footer {
         width: 100vw;
     }
 
