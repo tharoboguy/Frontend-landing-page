@@ -688,11 +688,16 @@ ul {
     #pricing {
         width: 100vw;
         margin-top: 400px;
+        padding-top: 200px;
     }
 
     .resources-items {
         width: 100vw;
         flex-direction: column;
+    }
+
+    #resources {
+        padding-top: 150px;
     }
 
     .resources-img {
