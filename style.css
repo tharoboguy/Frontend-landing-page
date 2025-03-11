@@ -168,6 +168,7 @@ button {
     background-color: white;
     border: 0;
     font-weight: normal;
+    text-decoration: underline orange;
 }
 
 .hero-video-link {
@@ -410,11 +411,13 @@ b:hover {
 .resources-items {
     padding-top: 40px;
     display: flex;
+    flex-wrap: wrap;
     gap: 55px;
 }
 
 .resources-img {
-    width: 370px;
+    width: 100vw;
+    max-width: 375px;
 }
 
 .item {
@@ -430,7 +433,6 @@ b:hover {
 
 .footer-items {
     display: flex;
-    flex-wrap: wrap;
 }
 
 hr {
@@ -519,10 +521,16 @@ ul {
 }
 
 @media screen and (max-width: 575px) {
+    /* * {
+        outline: 2px solid red;
+    } */
+    
     .nav-bar {
-        width: 80%;
-        left: 20%;
-        translate: 0;
+        width: 100%;
+        max-width: 574px;
+        margin: 0 auto;
+        margin-left: 30px;
+        z-index: 20;
     }
 
     .nav-items {
@@ -538,14 +546,16 @@ ul {
         margin-right: 20px;
         /* width: 100vw; */
         overflow: visible;
+        z-index: 1;
     }
 
     #hero, #products, #customers, #pricing, #resources, .footer {
         width: 100vw;
+        max-width: 574px;
     }
 
     .logo {
-        width: 200px;
+        width: 220px;
         height: 70px;
         padding-left: 3px;
         margin-top: 3px;
@@ -559,10 +569,10 @@ ul {
 
     .hero-group {
         width: 100%;
-        height: auto;
+        height: 500px;
         float: none;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 100px;
     }
 
     .hero-heading, .hero-text {
@@ -574,8 +584,10 @@ ul {
         float: none;
         width: 100vw;
         height: auto;
-        padding-top: 50px;
+        /* margin-top: 150px; */
+        padding-top: -80px;
         padding-left: 0;
+        /* margin-left: -100px; */
     }
 
     .products-heading {
@@ -587,15 +599,23 @@ ul {
 
     .products-group {
         width: 100vw;
+        max-width: 574px;
         flex-direction: column;
     }
 
     .products-items {
         width: 100vw;
+        max-width: 574px;
+    }
+    
+    .products-subhead, .products-subtext {
+        width: 100vw;
+        max-width: 574px;
+        font-size: x-large;
     }
 
     .products-signup {
-        margin-top: 7px;
+        margin-top: 15px;
         margin-left: 35vw;
     }
 
@@ -620,13 +640,30 @@ ul {
         height: auto;
     }
 
+    .customers-heading {
+        font-size: 40px;
+    }
+
+    .customers-subhead {
+        font-size: 17px;
+        opacity: 90%;
+    }
+
+    .customers-text {
+        font-size: 15px;
+    }
+
+   .customers-li {
+    font-size: larger;
+   }
+
     .customers-group-2 {
         padding-right: 0;
         margin-left: 10px;
     }
 
     .customers-group-3 {
-        margin-top: 600px;
+        padding-top: 100px;
     }
 
     .professional-img {
@@ -660,11 +697,13 @@ ul {
 
     .resources-img {
         width: 100vw;
+        max-width: 574px;
         height: auto;
     }
 
     .item {
         width: 100vw;
+        max-width: 574px;
         height: auto;
     }
 
@@ -721,6 +760,10 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+    /* * {
+        outline: 2px solid red;
+    } */
+    
     body {
         margin: 0;
         padding: 0;
@@ -728,8 +771,10 @@ ul {
       }
 
     .nav-bar {
-        width: 100vw;
-        left: 15%;
+        width: 100%;
+        max-width: 575px;
+        margin: 0 auto;
+        margin-left: 30px;
     }
 
     .nav-items {
@@ -744,16 +789,19 @@ ul {
         padding-left: 20px;
         margin-right: 20px;
         width: 575px;
-        /* margin: 0 auto; */
+        margin: 0 auto;
         overflow: visible;
     }
 
     #hero, #products, #customers, #pricing, #resources, .footer {
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
+        margin: 0 auto;
     }
 
     .hamburger {
         display: block;
+        text-align: center;
     }
 
     .logo {
@@ -765,30 +813,47 @@ ul {
     }
 
     .hero-group {
-        width: 575px;
+        width: 100%;
+        max-width: 575px;
         height: auto;
         float: none;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 900px;
+        position: relative;
+        /* margin: 0 auto; */
+    }
+
+    .hero-heading {
+        width: 575px;
+    }
+
+    .hero-text {
+        width: 575px;
+    }
+
+    .hero-button {
+        margin-left: 140px;
     }
 
     .hero-img {
         float: none;
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
         height: auto;
-        padding-top: 50px;
-        padding-left: 0;
+        margin-top: -100px;
+        margin-right: 100px;
     }
 
     .products-heading {
         width: 575px;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 200px;
+        padding-top: 450px;
     }
 
     .products-group {
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
     }
 
     .products-items {
@@ -802,15 +867,18 @@ ul {
     }
 
     .professionals {
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
     }
 
     .manager {
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
     }
 
     .marketer {
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
     }
 
     .customers-group-1, .customers-group-2, .customers-group-3, .professional-img, .manager-img, .marketer-img {
@@ -818,8 +886,13 @@ ul {
     }
 
     .customers-group-1, .customers-group-2, .customers-group-3 {
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
         height: auto;
+    }
+
+    .customers-group-1 {
+        margin-top: 50px;
     }
 
     .customers-group-2 {
@@ -833,7 +906,8 @@ ul {
 
     .professional-img {
         padding-top: 30px;
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
         height: auto;
     }
 
@@ -846,7 +920,8 @@ ul {
     .marketer-img {
         margin-top: 30px;
         padding-left: 0;
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
         height: auto;
     }
 
@@ -856,12 +931,14 @@ ul {
     }
 
     .resources-items {
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
         flex-direction: column;
     }
 
     .resources-img {
-        width: 575px;
+        width: 100vw;
+        max-width: 575px;
         height: auto;
     }
 
@@ -870,8 +947,13 @@ ul {
         height: auto;
     }
 
-    hr {
+    .img-head {
         width: 575px;
+    }
+
+    hr {
+        width: 100vw;
+        max-width: 575px;
         opacity: 30%;
     }
 
@@ -884,11 +966,12 @@ ul {
     }
 
     .footer-items {
+        width: 100vw;
+        max-width: 575px;
         flex-direction: column;
     }
 
     .foot-item {
-        width: 50vw;
         height: auto;
     }
 
@@ -906,18 +989,20 @@ ul {
     }
 
     .copyright {
-        width: 575px;
+        width: 200px;
         display: block;
         text-align: center;
+        margin-left: 150px;
     }
 
     .owner {
-        width: 575px;
+        width: 200px;
         display: block;
         text-align: center;
         float: none;
         margin-top: 10px;
         margin-bottom: 10px;
+        margin-right: 100px;
     }
 
 }
@@ -935,7 +1020,8 @@ ul {
     
     .nav-bar {
         width: 768px;
-        left: 34%;
+        margin: 0 auto;
+        margin-left: 30px;
     }
 
     .nav-items {
@@ -960,6 +1046,7 @@ ul {
 
     .hamburger {
         display: block;
+        text-align: center;
     }
 
     .logo {
@@ -1026,7 +1113,7 @@ ul {
     }
 
     .customers-group-1, .customers-group-2, .customers-group-3 {
-        width: 768px;
+        width: 758px;
         height: auto;
     }
 
@@ -1064,7 +1151,7 @@ ul {
     }
 
     .resources-items {
-        width: 768px;
+        width: 758px;
     }
 
     .resources-img {
@@ -1092,12 +1179,12 @@ ul {
     }
 
     .footer-items {
-        width: 768px;
+        width: 758px;
         /* flex-direction: column; */
     }
 
     .foot-item {
-        width: 450px;
+        width: 350px;
         height: auto;
         flex-basis: 50%;
     }
@@ -1116,15 +1203,15 @@ ul {
     }
 
     .copyright {
-        width: 768px;
+        width: 300px;
         display: block;
-        float: right;
+        float: left;
     }
 
     .owner {
-        width: 768px;
+        width: 300px;
         display: block;
-        float: left;
+        float: right;
         margin-top: 10px;
         margin-bottom: 10px;
     }
